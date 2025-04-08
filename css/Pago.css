@@ -1,0 +1,15 @@
+*{
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.titulo{
+    color: #efaaf5;
+
+}
+
+table{
+    width: 20rem;
+    margin: auto;
+    background-color: #efaaf5;
+}
