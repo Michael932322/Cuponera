@@ -36,7 +36,7 @@ if ($usuario_logueado) {
     <ul class="nav justify-content-end">
       <?php if ($usuario_logueado): ?>
       <li class="nav-item">
-        <a class="nav-link" href=""><?php echo htmlspecialchars($datos_usuario[0]['nombres']); ?></a>
+        <a class="nav-link" href="php/perfil.php"><?php echo htmlspecialchars($datos_usuario[0]['nombres']); ?></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="php/logout.php">Cerrar Sesión</a>
@@ -82,7 +82,7 @@ if ($usuario_logueado) {
         <?php foreach ($cupones as $oferta): ?>
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
-              <img src="imagenes/donkeys-desayuno.jpg" class="card-img-top" alt="Imagen de promoción">
+            <img src="php/Mostrar_imagen.php?id=<?php echo $oferta['id']; ?>" class="card-img-top" alt="Imagen de promoción">
               <div class="card-body">
                 <h4 class="card-title"><?php echo htmlspecialchars($oferta['titulo']); ?></h4>
                 <p class="card-text">

@@ -36,11 +36,13 @@ $cupones = $compra->obtenerCuponesPendientes($usuario_id);
     <link href="../css/Pago.css" rel="stylesheet">
 </head>
 <body>
-    <div class="titulo text-center mt-4">
-        <h4>RESUMEN DE PAGO</h4>
-    </div>
-
     <div class="container mt-4">
+        <a href="../index.php" class="btn-regresar">← Volver al inicio</a>
+
+        <div class="titulo text-center">
+            <h4>RESUMEN DE PAGO</h4>
+        </div>
+
         <?php if (isset($_GET['success'])): ?>
             <div class="alert alert-success">¡Compra realizada con éxito!</div>
         <?php endif; ?>

@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdf5ff;
+    color: #333;
+    margin: 0;
+    padding: 2rem;
+}
+
+.contenedor {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.datos-usuario, .cupones {
+    background-color: #fff;
+    border: 2px solid #efaaf5;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: #efaaf5;
+    border-bottom: 1px solid #efaaf5;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.cupon {
+    border: 1px solid #efaaf5;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    background-color: #fef0fb;
+    box-shadow: 0 2px 6px rgba(239, 170, 245, 0.3);
+}
+
+.cupon img {
+    width: 40%;
+    max-height: 200px; 
+    object-fit: cover; 
+    display: block;
+    margin: 0 auto 1rem auto; 
+    border-radius: 0.5rem;
+}
+
+.cupon h3 {
+    color: #ad32c2;
+    margin-bottom: 0.5rem;
+}
+
+.btn-regresar {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background-color: #efaaf5;
+    color: #fff;
+    border: none;
+    border-radius: 0.6rem;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 6px rgba(239, 170, 245, 0.3);
+    transition: background-color 0.3s;
+}
+.btn-regresar:hover {
+    background-color: #d98be4;
+}
+
+.estado-cupon {
+    background-color: #efaaf5;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+}
