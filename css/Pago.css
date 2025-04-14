@@ -1,15 +1,128 @@
-*{
-    padding-top: 2rem;
-    text-align: center;
+/* Pago.css */
+
+body {
+    background-color: #fff7fc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-.titulo{
+.titulo h4 {
     color: #efaaf5;
-
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
 }
 
-table{
-    width: 20rem;
+.container {
+    max-width: 1000px;
     margin: auto;
+    padding: 1rem;
+}
+
+/* Tabla de cupones */
+table {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+thead th {
     background-color: #efaaf5;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+}
+
+tbody td {
+    text-align: center;
+    padding: 1rem;
+    vertical-align: middle;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fef2fd;
+}
+
+tbody tr:last-child td {
+    font-weight: bold;
+}
+
+/* Botones */
+.btn-primary {
+    background-color: #efaaf5;
+    border-color: #efaaf5;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #e88ce5;
+    border-color: #e88ce5;
+}
+
+.btn-success {
+    background-color: #da8be8;
+    border-color: #da8be8;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #c573d5;
+    border-color: #c573d5;
+}
+
+.btn-danger {
+    background-color: #f572a5;
+    border-color: #f572a5;
+    font-size: 0.875rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+}
+
+.btn-danger:hover {
+    background-color: #e64e8e;
+    border-color: #e64e8e;
+}
+
+/* Alerta de éxito */
+.alert-success {
+    background-color: #f4c7f9;
+    color: #6d176f;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Formulario de tarjeta */
+#formulario-pago {
+    display: none;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+#formulario-pago h5 {
+    color: #efaaf5;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    font-weight: 500;
+    color: #555;
+}
+
+.form-control {
+    border-radius: 6px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+.text-center {
+    text-align: center;
 }
