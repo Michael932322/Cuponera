@@ -17,9 +17,8 @@ if (isset($_GET['eliminar'])) {
     exit();
 }
 
-// Cuando se presiona "Comprar"
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['comprar'])) {
-    $compra->finalizarCompra($usuario_id); // método que debes crear en Compra.php
+    $compra->finalizarCompra($usuario_id); 
     header("Location: Pago.php?success=1");
     exit();
 }
