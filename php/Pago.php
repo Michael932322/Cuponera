@@ -33,6 +33,7 @@ $cupones = $compra->obtenerCuponesPendientes($usuario_id);
     <title>Resumen Pago</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/Pago.css?v=1.1" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../imagenes/logo-2.ico">
 </head>
 <body>
     <div class="container mt-4">

@@ -19,6 +19,7 @@ $cupones_usuario = $cupon->obtenerCuponesPorUsuario($usuario_id);
     <meta charset="UTF-8">
     <title>Perfil de Usuario</title>
     <link rel="stylesheet" href="../css/perfil.css">
+    <link rel="icon" type="image/x-icon" href="../imagenes/logo-2.ico">
 </head>
 <body>
 

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/estilo_login.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
+    <link rel="icon" type="image/x-icon" href="../imagenes/logo-2.ico">
 </head>
 <body>
     
