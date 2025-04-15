@@ -49,9 +49,18 @@ class Compra extends Conexion {
     }
 
     public function finalizarCompra($usuario_id) {
-        $query = "UPDATE compras SET estado = 'Disponible' WHERE usuario_id = :usuario_id AND estado = 'Pendiente'";
-        $params = [':usuario_id' => $usuario_id];
-        $this->set_query($query, $params);
-    }    
+        $queryObtener = "SELECT oferta_id FROM compras WHERE usuario_id = :usuario_id AND estado = 'Pendiente'";
+        $ofertas = $this->get_query($queryObtener, [':usuario_id' => $usuario_id]);
+    
+        foreach ($ofertas as $oferta) {
+            $oferta_id = $oferta['oferta_id'];
+            $queryRestar = "UPDATE ofertas SET cantidad_limite = cantidad_limite - 1 WHERE id = :oferta_id AND cantidad_limite > 0";
+            $this->set_query($queryRestar, [':oferta_id' => $oferta_id]);
+        }
+    
+        $queryActualizar = "UPDATE compras SET estado = 'Disponible' WHERE usuario_id = :usuario_id AND estado = 'Pendiente'";
+        $this->set_query($queryActualizar, [':usuario_id' => $usuario_id]);
+    }
+       
 }
 ?>

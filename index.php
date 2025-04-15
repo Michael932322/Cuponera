@@ -96,7 +96,7 @@ if ($usuario_logueado) {
                 </p>
                 <div class="btn-contenedor">
                 <?php if ($usuario_logueado): ?>
-                    <form action="php/agregar_carrito.php" method="POST">
+                    <form action="php/Agregar_carrito.php" method="POST">
                         <input type="hidden" name="oferta_id" value="<?php echo $oferta['id']; ?>">
                         <button type="submit" class="btn-card">Agregar al Carrito</button>
                     </form>
